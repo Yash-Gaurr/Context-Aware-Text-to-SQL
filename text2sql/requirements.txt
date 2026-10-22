@@ -1,0 +1,11 @@
+Flask>=3.0
+python-dotenv>=1.0.0
+
+# Reasoning backends -- you only need ONE of these installed, matching
+# whichever REASONER / *_API_KEY you actually plan to use. The app runs
+# fine offline (REASONER=rule) with none of them installed at all.
+
+google-genai>=0.3   # Gemini -- FREE tier, no credit card (recommended if you're on a budget)
+openai>=1.40        # covers BOTH OpenAIReasoner (paid) and OpenRouterReasoner (free, via OpenRouter's
+                     # OpenAI-compatible endpoint) -- same package, different base_url/API key
+anthropic>=0.34      # Claude -- paid

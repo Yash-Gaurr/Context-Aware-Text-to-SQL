@@ -1,0 +1,35 @@
+# Python byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables & secrets (CRITICAL)
+.env
+.env.local
+.env.*.local
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+*/venv/
+text2sql/venv/
+
+# Database files (recreatable via python database/setup_db.py)
+# If you want to keep the seeded demo DB in repo, you can comment this out.
+# *.db
+
+# IDE and Editor Cache
+.vscode/.ropeproject
+.idea/
+
+# OS specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Logs
+*.log

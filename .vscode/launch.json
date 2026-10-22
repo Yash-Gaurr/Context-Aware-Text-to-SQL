@@ -1,0 +1,48 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Text-to-SQL Web App",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Run App via text2sql/app.py",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/text2sql/app.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/text2sql",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Run Live LLM Smoke Test (Gemini)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/text2sql/tests/test_llm_smoke.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/text2sql",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Run Pipeline Tests (32 checks)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/text2sql/tests/test_pipeline.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/text2sql"
+    },
+    {
+      "name": "Rebuild & Seed Database",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/text2sql/database/setup_db.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/text2sql"
+    }
+  ]
+}

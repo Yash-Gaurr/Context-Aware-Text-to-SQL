@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Text-to-SQL Server",
+      "type": "shell",
+      "command": "${workspaceFolder}/text2sql/venv/Scripts/python.exe",
+      "args": ["${workspaceFolder}/run.py"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Tests",
+      "type": "shell",
+      "command": "${workspaceFolder}/text2sql/venv/Scripts/python.exe",
+      "args": ["${workspaceFolder}/text2sql/tests/test_pipeline.py"],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Reset / Rebuild Database",
+      "type": "shell",
+      "command": "${workspaceFolder}/text2sql/venv/Scripts/python.exe",
+      "args": ["${workspaceFolder}/text2sql/database/setup_db.py"],
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

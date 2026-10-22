@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Text-to-SQL Web App",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/app.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Run Pipeline Tests (32 checks)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/tests/test_pipeline.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Rebuild & Seed Database",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/database/setup_db.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
